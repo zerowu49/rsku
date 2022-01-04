@@ -23,7 +23,7 @@ class _SplashPageState extends State<SplashPage> {
 
       // Redirect to login page
       Future.delayed(Duration(seconds: 3), () {
-        Get.to(() => LoginPage());
+        Get.off(() => LoginPage());
       });
     });
     super.initState();

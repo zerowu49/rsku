@@ -131,7 +131,7 @@ class _RegisterPageState extends State<RegisterPage> {
           Future.delayed(Duration(seconds: 2), () {
             EasyLoading.dismiss();
             EasyLoading.showSuccess('Register success..');
-            Get.to(() => MainPage());
+            Get.off(() => MainPage());
           });
         }
       },

@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> {
           Future.delayed(Duration(seconds: 2), () {
             EasyLoading.dismiss();
             EasyLoading.showSuccess('Login Success..');
-            Get.to(() => MainPage());
+            Get.off(() => MainPage());
           });
         }
       },

@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'RSku',
         theme: ThemeData(
           primaryColor: Colors.white,
